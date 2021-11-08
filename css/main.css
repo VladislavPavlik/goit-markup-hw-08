@@ -543,16 +543,14 @@ body {
   margin-right: auto;
   background-size: cover;
   background-repeat: no-repeat;
-  background: linear-gradient(rgba(47, 48, 58, 0.4) 100%, rgba(47, 48, 58, 0.4) 100%);
-  background-image: url(../images/mobile-tablet/mobile/hero-x1.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile-tablet/mobile/hero-x1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background: linear-gradient(rgba(47, 48, 58, 0.4) 100%, rgba(47, 48, 58, 0.4) 100%);
-    background-image: url(../images/mobile-tablet/mobile/hero-x2.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile-tablet/mobile/hero-x2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -562,17 +560,15 @@ body {
   .hero {
     background-size: cover;
     background-repeat: no-repeat;
-    background: linear-gradient(rgba(47, 48, 58, 0.4) 100%, rgba(47, 48, 58, 0.4) 100%);
-    background-image: url(../images/mobile-tablet/hero-tabl-x1.png);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile-tablet/hero-tabl-x1.png);
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background: linear-gradient(rgba(47, 48, 58, 0.4) 100%, rgba(47, 48, 58, 0.4) 100%);
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(../images/mobile-tablet/hero-tabl-x2.png);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile-tablet/hero-tabl-x2.png);
   }
 }
 
@@ -580,17 +576,15 @@ body {
   .hero {
     background-size: cover;
     background-repeat: no-repeat;
-    background: linear-gradient(rgba(47, 48, 58, 0.4) 100%, rgba(47, 48, 58, 0.4) 100%);
-    background-image: url(../images/hero-desk-x1.png);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desk-x1.png);
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background: linear-gradient(rgba(47, 48, 58, 0.4) 100%, rgba(47, 48, 58, 0.4) 100%);
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(../images/hero-desk-x2.png);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desk-x2.png);
   }
 }
 
@@ -738,6 +732,13 @@ body {
   .benefits-list {
     display: flex;
     flex-wrap: wrap;
+    margin-right: -60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits-list {
+    margin-right: -30px;
   }
 }
 
@@ -978,6 +979,7 @@ body {
 @media screen and (min-width: 1200px) {
   .customers__title {
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 
@@ -1314,17 +1316,6 @@ body {
   }
 }
 
-.portfolio__button-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-@media screen and (min-width: 768px) {
-  .portfolio__button-list {
-    justify-content: center;
-  }
-}
-
 .portfolio__button {
   font-style: normal;
   font-weight: 500;
@@ -1374,14 +1365,40 @@ body {
 }
 
 .portfolio__button-list {
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio__button-list {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__button-list {
+    margin-bottom: 50px;
+  }
+}
+
 .portfolio__main-list {
   display: flex;
   flex-wrap: wrap;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__main-list {
+    margin-right: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-overlay-conteiner {
+    height: 294px;
+  }
 }
 
 .button-portfolio {

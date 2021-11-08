@@ -10,13 +10,7 @@
     padding-bottom: 94px;
   }
 }
-.portfolio__button-list {
-  display: flex;
-  flex-wrap: wrap;
-  @media screen and (min-width: 768px) {
-    justify-content: center;
-  }
-}
+
 .portfolio__button {
   //   display: block;
   font-style: normal;
@@ -65,12 +59,29 @@
 }
 
 .portfolio__button-list {
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio__main-list {
   display: flex;
   flex-wrap: wrap;
+  @media screen and (min-width: 1200px) {
+    margin-right: -30px;
+  }
+}
+
+.portfolio-overlay-conteiner {
+  @media screen and (min-width: 1200px) {
+    height: 294px;
+  }
 }

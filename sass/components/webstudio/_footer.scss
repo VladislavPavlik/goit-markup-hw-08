@@ -1,8 +1,11 @@
-.footer-container {
-  padding-top: 60px;
-  text-align: center;
+.footer {
   background-color: #2f303a;
+  padding-top: 60px;
   padding-bottom: 60px;
+}
+.footer-container {
+  text-align: center;
+
   @media screen and (min-width: 1200px) {
     display: flex;
   }
@@ -24,6 +27,11 @@
 }
 .footer__link {
   display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -40,6 +48,7 @@
   }
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
+    text-align: left;
   }
 }
 .footer__title {
@@ -52,6 +61,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .teammate__icon-bg--background {
